@@ -6,6 +6,14 @@
 
 local composer = require("composer")
 
+function runUnitTestSuites()
+	require "testmain"
+end
+
+if system.getInfo( "environment" ) == "simulator" then
+	runUnitTestSuites()
+end
+
 -- hide statusbar
 display.setStatusBar(display.HiddenStatusBar)
 
