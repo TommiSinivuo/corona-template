@@ -38,6 +38,31 @@ settings =
     },
 
     --
+    -- Desktop section (windows, macos & html5)
+    --
+    window =
+    {
+        defaultViewWidth = 768,
+        defaultViewHeight = 1280,
+        titleText = {
+            default = "Corona Template",
+            ["en‐us"] = "Corona Template (English‐USA)",
+            ["en‐gb"] = "Corona Template (English‐UK)",
+            ["en"] = "Corona Template (English)",
+            ["fr"] = "Corona Template (French)",
+            ["es"] = "Corona Template (Spanish)",
+        },
+    },
+
+    --
+    -- Windows section
+    --
+    win32 =
+    {
+        -- settings for win32 application comes here
+    },
+
+    --
     -- Plugins section
     --
     plugins =
