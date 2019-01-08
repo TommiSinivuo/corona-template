@@ -10,7 +10,7 @@ local scene = composer.newScene()
 local player
 
 local function endGame()
-   composer.gotoScene("menu", {time = 800, effect = "crossFade"})
+   composer.gotoScene("scene.menu", {time = 800, effect = "crossFade"})
 end
 
 local function dragPlayer(event)
@@ -40,7 +40,7 @@ function scene:create(event)
    local endButton = display.newText(sceneGroup, "End Game", display.contentCenterX, 0, native.systemFont, 44)
    endButton:setFillColor(0.82, 0.86, 1)
 
-   player = display.newImageRect(sceneGroup, "player.png", 64, 64)
+   player = display.newImageRect(sceneGroup, "scene/game/img/player.png", 64, 64)
    player.x = display.contentCenterX
    player.y = display.contentCenterY
 
